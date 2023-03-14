@@ -30,22 +30,28 @@ li.first a {
   background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.menu {
-  list-style: none;
-  font-size: 60%;
-  margin-right: 50px;
-  color: black;
-  margin-top: 10px;
+.deroulant {
+  position: absolute;
+  left: 180px;
 }
-.menu a {
-  color: rgb(53, 53, 53);
+
+.btn-deroulant {
+  background-color: green;
+  color: white;
 }
-.menu a:hover {
-  color: green;
+.btn-deroulant:hover {
+  background-color: rgb(17, 95, 17);
+  color: white;
+}
+.btn-deroulant .mini {
+  background: green;
+  color: white;
 }
 
 .loupe {
   color: rgb(53, 53, 53);
+  scale: 1.6;
+  margin-right: 40px;
 }
 .loupe:hover {
   color: green;
@@ -89,10 +95,15 @@ li.first a {
   color: green;
   margin-bottom: 20px;
 }
-.event .btn1 {
+
+.btn1 {
   background-color: green;
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100%;
+}
+.btn1:hover {
+  background-color: rgb(17, 104, 17);
+  color: rgb(255, 255, 255);
 }
 
 .school img {
@@ -140,4 +151,123 @@ li.first a {
 
 .modal {
   color: green;
+}
+
+@media screen and (min-width: 480px) {
+  .loupe {
+    position: absolute;
+    right: 30px;
+  }
+  .btn1 {
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .logo {
+    left: 30px;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 630px) {
+  .menus {
+    display: flex;
+  }
+  .btn1 {
+    width: 30%;
+  }
+  .logo {
+    position: relative;
+    left: -60px;
+  }
+  .loupe {
+    right: 10px;
+  }
+  .main2 {
+    width: 80%;
+    margin: auto;
+  }
+  .school {
+    border-radius: 5px;
+  }
+  .school img {
+    border-radius: 5px;
+  }
+  .logo {
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 700px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .event {
+    text-align: center;
+  }
+  .school {
+    border-radius: 5px;
+  }
+  .school img {
+    border-radius: 5px;
+  }
+  .carousel-inner {
+    border-radius: 5px 5px 0 0;
+  }
+  .text {
+    border-radius: 0 0 5px 5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main2 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main2 {
+    width: 80%;
+    margin: auto;
+  }
+  .school {
+    width: 80%;
+    margin: auto;
+  }
+  .help {
+    width: 60%;
+    margin-left: 70px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main2 {
+    display: flex;
+  }
+  .school {
+    width: 60%;
+  }
+  .help {
+    width: 40%;
+    margin-left: 50px;
+  }
+  .contanier-fluid {
+    width: 80%;
+  }
+  .btn1 {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .school {
+    width: 70%;
+  }
+  .help {
+    width: 50%;
+    margin-left: 190px;
+  }
+  .loupe {
+    margin-right: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

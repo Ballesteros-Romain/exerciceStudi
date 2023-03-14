@@ -23,16 +23,22 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./Un-Enfant-par-la-Main-400x400-BD.jpg" alt="logo un enfant par la main" width="120"
-                        height="114">
+                    <img class="logo" src="./Un-Enfant-par-la-Main-400x400-BD.jpg" alt="logo un enfant par la main"
+                        width="120" height="114">
                 </a>
-                <ul class="menus">
-                    <li class="menu"><a href="#">parrainer un enfant</a></li>
-                    <li class="menu"><a href="#">Offrir un cadeau</a></li>
-                    <li class="menu"><a href="#">Aider autrement</a></li>
-                    <li class="menu"><a href="#">Donner pour un projet</a></li>
-                    <li class="menu"><a href="#">Nous découvrir</a></li>
-                </ul>
+                <div class="dropdown deroulant">
+                    <button class="btn btn-deroulant dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item mini" type="button">Parrainer un enfant</button></li>
+                        <li><button class="dropdown-item mini" type="button">Offrir un cadeau</button></li>
+                        <li><button class="dropdown-item mini" type="button">Aider autrement</button></li>
+                        <li><button class="dropdown-item mini" type="button">Donner pour un projet</button></li>
+                        <li><button class="dropdown-item mini" type="button">Nous découvrir</button></li>
+                    </ul>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-search loupe" viewBox="0 0 16 16">
                     <path
@@ -42,7 +48,7 @@
         </nav>
     </header>
     <!------------------ Main-------------------->
-    <main>
+    <main class="main2">
         <div class="school">
             <img src="./ecole.jpeg" alt="photo ecolier">
             <h2>Aller à l'école</h2>
