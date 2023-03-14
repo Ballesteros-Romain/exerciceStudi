@@ -86,9 +86,10 @@ li.first {
     color: green;
     margin-bottom: 20px;
   }
-  & .btn {
+  & .btn1 {
     background-color: green;
     color: white;
+    width: 100%;
   }
 }
 //--------- Page 2 ----------------------
@@ -100,7 +101,7 @@ li.first {
   background-color: green;
   color: white;
 }
-main > h2 {
+.school > h2 {
   text-align: center;
   margin-top: 20px;
 }
@@ -109,3 +110,27 @@ main > h2 {
   margin-top: 20px;
   padding-bottom: 15px;
 }
+.help {
+  text-align: center;
+  color: green;
+  padding: 20px;
+  & h2 {
+    margin-top: 10px;
+  }
+  & h5 {
+    margin: 20px;
+  }
+}
+.btn2 {
+  background-color: green;
+  color: white;
+  margin: 20px;
+  &:hover {
+    background-color: rgb(8, 73, 8);
+    color: white;
+  }
+}
+.modal {
+  color: green;
+}
+//------------------------------------- Media queries -----------------------------------------------------

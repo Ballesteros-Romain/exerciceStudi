@@ -42,11 +42,83 @@
         </nav>
     </header>
     <!------------------ Main-------------------->
-    <main class="school">
-        <img src="./ecole.jpeg" alt="photo ecolier">
-        <h2>Aller à l'école</h2>
-        <div>les décodeurs du parrainage : épisode 3</div>
+    <main>
+        <div class="school">
+            <img src="./ecole.jpeg" alt="photo ecolier">
+            <h2>Aller à l'école</h2>
+            <div>Votre action, la solution !</div>
+        </div>
+        <div class="help">
+            <h2>Enchère de parrainage</h2>
+            <h5>Le 25/09/2023 venez les aider</h5>
+            <p>Parrainer un enfant, c’est contribuer à changer sa vie et celle de sa communauté. C’est aussi une
+                occasion unique de
+                partager une expérience riche de sens avec un enfant au bout du monde.
+
+                Nos programmes de développement mobilisent les enfants et les membres de leur famille, les communautés,
+                mais aussi les
+                autorités et associations locales qui ont tous un rôle à jouer dans l’amélioration des conditions de vie
+                et de
+                développement d’une région ou d’un pays.
+
+                Parrainer un enfant, c’est l’accompagner pour changer sa vie durablement. Ensemble changeons la vie des
+                enfants !</p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Je m'inscris
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Inscription</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec
+                                    quelqu'un d'autre.
+                                </div>
+                                <div class="mb-3">
+                                    <label for="text" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="text" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1-2">
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="text" class="form-label">Adresse</label>
+                                <input type="text" class="form-control" id="exampleInputPassword3">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Je confirme mes coordonées</label>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-success">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
